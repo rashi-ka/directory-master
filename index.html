@@ -11,8 +11,10 @@
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
-		        
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/material.min.css">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-amber.min.css" />
         <link rel="stylesheet" href="css/style.css">
 		<script src="js/modernizr.js"></script> <!-- Modernizr -->
     </head>
@@ -22,7 +24,7 @@
         <![endif]-->
 
         <!-- USING BOOTSTRAP 3.0.3 -->
-		<nav class="navbar navbar-fixed-top">
+		<nav class="navbar navbar-fixed-top" id="nav">
 		  <div class="container">
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -33,10 +35,14 @@
 		      <a class="navbar-brand" href="#">Logo</a>
 		    </div>
 		    <div class="collapse navbar-collapse">
+		      <ul class="nav navbar-nav pull-right" style="padding-top: 10px;margin-left: 30px">
+		        <li><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin-right: 10px;"><strong>Login</strong></button></li>
+		        <li><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"><strong>Sign Up</strong></button></li>
+		      </ul>
 		      <ul class="nav navbar-nav pull-right">
-		        <li class="active"><a href="#">Home</a></li>
-		        <li><a href="#">Page</a></li>
-		        <li><a href="#">Link</a></li>
+		        <li><a href="#">Advertisement</a></li>
+		        <li><a href="#">List Your Business</a></li>
+		        <li><a href="#">Categories</a></li>
 		      </ul>
 		    </div><!--/.nav-collapse -->
 		  </div>
@@ -47,310 +53,1250 @@
         <section>
 		    <div class="banner row" id="banner">    
 		    	<div class="crt-parallaxvideo">
-		        <img src="https://themographics.com/wordpress/listingo/wp-content/uploads/2017/09/img-01.jpg" class="img-responsive">
-		        <div class="parallax-pattern-overlay" style="position: absolute; top: 0;width: 100%;height: 100%;">
-		            <div class="container text-center" style="height:100%;padding-top:100px;">
-		               <div class="row">
-		                 <div class="col-md-12">
-		                    <div class="clearfix"></div>
-		                    <div class="p80" style="padding-top:80px;"></div>
-		                    <div style="padding-top: 10px;"></div>
-		                    <div class="searchBlock">
-		                    <h1 style="color: #fff">Listing Local Business Online</h1>
-		                    <h4 style="color: #fff">Search 11,12,121 Service Providers</h4>
-		                    <div class="searchInputBlock"><div class="homeSearchBlock" id="homeSearchBlock"><div class="searchFullBlock"> <div class="searchLocation"></div></div><div class="searchBusiness"><input type="text" value="" id="ipSearch" class="form-control homeSearchTextbox businessInputField" placeholder="Search Local Business Online"><div class="searchResult" id="divRes"></div> </div><div class="searchButtonBlock"><span class="searchButton"> <i class="fa fa-search"></i></span></div></div></div></div></div>
-		                </div>
-		                
-		               </div>
-		            </div>
+		    		<div class="cd-dropdown-wrapper">
+						<nav class="cd-dropdown dropdown-is-active">
+							<ul class="cd-dropdown-content">
+								<li class="has-children">
+									<a href="#">Automobile</a>
+									<ul class="cd-dropdown-icons is-hidden">
+										<li>
+											<a class="cd-dropdown-item item-1" href="#">
+												<h5>Car Repair</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-2" href="#">
+												<h5>Car Tyres</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-3" href="#">
+												<h5>Car Batteries</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-4" href="#">
+												<h5>Car Accessories</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-5" href="#">
+												<h5>Car Wash</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-6" href="#">
+												<h5>Motorcycle Repair</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-7" href="#">
+												<h5>Scooter Repair</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-8" href="#">
+												<h5>Two Wheeler Tyres</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-9" href="#">
+												<h5>Two Wheeler Batteries</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-10" href="#">
+												<h5>Two Wheeler Accessories</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-11" href="#">
+												<h5>Automobile Spares</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-12" href="#">
+												<h5>View All</h5>												
+												<p>Browse All Categories</p>
+											</a>
+										</li>
+
+									</ul> <!-- .cd-dropdown-icons -->
+								</li> <!-- .has-children -->
+								<li class="has-children">
+									<a href="#">Doctors</a>
+									<ul class="cd-dropdown-icons is-hidden">
+										<li>
+											<a class="cd-dropdown-item item-1" href="#">
+												<h5>Ayurvedic Doctors</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-2" href="#">
+												<h5>Cardiologists</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-3" href="#">
+												<h5>Chest Specialists</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-4" href="#">
+												<h5>Cosmetic Surgeons</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-5" href="#">
+												<h5>Dentists</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-6" href="#">
+												<h5>Dermatologists</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-7" href="#">
+												<h5>Diabetologists</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-8" href="#">
+												<h5>ENT Specialists</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-9" href="#">
+												<h5>Eye Specialists</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-10" href="#">
+												<h5>Gastroenterologists</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-11" href="#">
+												<h5>General Physicians</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-12" href="#">
+												<h5>View More</h5>
+												<p>Browse All Categories</p>
+											</a>
+										</li>
+
+									</ul> <!-- .cd-dropdown-icons -->
+								</li> <!-- .has-children -->
+								<li class="has-children">
+									<a href="#">Services</a>
+									<ul class="cd-dropdown-icons is-hidden">
+										<li>
+											<a class="cd-dropdown-item item-1" href="#">
+												<h5>Service #1</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-2" href="#">
+												<h5>Service #2</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-3" href="#">
+												<h5>Service #3</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-4" href="#">
+												<h5>Service #4</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-5" href="#">
+												<h5>Service #5</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-6" href="#">
+												<h5>Service #6</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-7" href="#">
+												<h5>Service #7</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-8" href="#">
+												<h5>Service #8</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-9" href="#">
+												<h5>Service #9</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-10" href="#">
+												<h5>Service #10</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-11" href="#">
+												<h5>Service #11</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-12" href="#">
+												<h5>Service #12</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+									</ul> <!-- .cd-dropdown-icons -->
+								</li> <!-- .has-children -->
+								<li class="has-children">
+									<a href="#">Services</a>
+									<ul class="cd-dropdown-icons is-hidden">
+										<li>
+											<a class="cd-dropdown-item item-1" href="#">
+												<h5>Service #1</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-2" href="#">
+												<h5>Service #2</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-3" href="#">
+												<h5>Service #3</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-4" href="#">
+												<h5>Service #4</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-5" href="#">
+												<h5>Service #5</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-6" href="#">
+												<h5>Service #6</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-7" href="#">
+												<h5>Service #7</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-8" href="#">
+												<h5>Service #8</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-9" href="#">
+												<h5>Service #9</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-10" href="#">
+												<h5>Service #10</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-11" href="#">
+												<h5>Service #11</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-12" href="#">
+												<h5>Service #12</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+									</ul> <!-- .cd-dropdown-icons -->
+								</li> <!-- .has-children -->
+								<li class="has-children">
+									<a href="#">Services</a>
+									<ul class="cd-dropdown-icons is-hidden">
+										<li>
+											<a class="cd-dropdown-item item-1" href="#">
+												<h5>Service #1</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-2" href="#">
+												<h5>Service #2</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-3" href="#">
+												<h5>Service #3</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-4" href="#">
+												<h5>Service #4</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-5" href="#">
+												<h5>Service #5</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-6" href="#">
+												<h5>Service #6</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-7" href="#">
+												<h5>Service #7</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-8" href="#">
+												<h5>Service #8</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-9" href="#">
+												<h5>Service #9</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-10" href="#">
+												<h5>Service #10</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-11" href="#">
+												<h5>Service #11</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-12" href="#">
+												<h5>Service #12</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+									</ul> <!-- .cd-dropdown-icons -->
+								</li> <!-- .has-children -->
+								<li class="has-children">
+									<a href="#">Services</a>
+									<ul class="cd-dropdown-icons is-hidden">
+										<li>
+											<a class="cd-dropdown-item item-1" href="#">
+												<h5>Service #1</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-2" href="#">
+												<h5>Service #2</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-3" href="#">
+												<h5>Service #3</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-4" href="#">
+												<h5>Service #4</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-5" href="#">
+												<h5>Service #5</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-6" href="#">
+												<h5>Service #6</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-7" href="#">
+												<h5>Service #7</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-8" href="#">
+												<h5>Service #8</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-9" href="#">
+												<h5>Service #9</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-10" href="#">
+												<h5>Service #10</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-11" href="#">
+												<h5>Service #11</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+										<li>
+											<a class="cd-dropdown-item item-12" href="#">
+												<h5>Service #12</h5>
+												<p>This is the item description</p>
+											</a>
+										</li>
+
+									</ul> <!-- .cd-dropdown-icons -->
+								</li> <!-- .has-children -->
+								<li><a href="#">Browse All Categories</a></li>
+							</ul> <!-- .cd-dropdown-content -->
+						</nav> <!-- .cd-dropdown -->
+					</div> <!-- .cd-dropdown-wrapper -->
+			        <img src="img/banner.jpg" class="img-responsive" style="width: 100%">
+			        <div class="parallax-pattern-overlay" style="position: absolute; top: 0;width: 100%;height: 100%;">
+			            <div class="container text-center" style="height:100%;padding-top:100px;">
+			               <div class="row">
+			                 <div class="col-md-12">
+			                    <div class="clearfix"></div>
+			                    <div class="p80" style="padding-top:80px;"></div>
+			                    <div style="padding-top: 10px;"></div>
+			                    <div class="searchBlock">
+			                    <h4 style="color: #fff">Search 11,12,121 Service Providers</h4>
+			                    <div class="searchInputBlock"><div class="homeSearchBlock" id="homeSearchBlock"><div class="searchFullBlock"> <div class="searchLocation"></div></div><div class="searchBusiness"><input type="text" value="" id="ipSearch" class="form-control homeSearchTextbox businessInputField" placeholder="Search Local Business Online"><div class="searchResult" id="divRes"></div> </div><div class="searchButtonBlock"><span class="searchButton"> <i class="fa fa-search"></i></span></div></div></div></div></div>
+			                </div>
+			                
+			               </div>
+			            </div>
 		        </div>
 		    </div>  
-		    <div class="cd-dropdown-wrapper">
-			<nav class="cd-dropdown dropdown-is-active">
-				<ul class="cd-dropdown-content">
-					<li class="has-children">
-						<a href="http://codyhouse.co/?p=748">Clothing</a>
-
-						<ul class="cd-secondary-dropdown is-hidden">
-							<li class="go-back"><a href="#0">Menu</a></li>
-							<li class="see-all"><a href="http://codyhouse.co/?p=748">All Clothing</a></li>
-							<li class="has-children">
-								<a href="http://codyhouse.co/?p=748">Accessories</a>
-
-								<ul class="is-hidden">
-									<li class="go-back"><a href="#0">Clothing</a></li>
-									<li class="see-all"><a href="http://codyhouse.co/?p=748">All Accessories</a></li>
-									<li class="has-children">
-										<a href="#0">Beanies</a>
-
-										<ul class="is-hidden">
-											<li class="go-back"><a href="#0">Accessories</a></li>
-											<li class="see-all"><a href="http://codyhouse.co/?p=748">All Benies</a></li>
-											<li><a href="http://codyhouse.co/?p=748">Caps &amp; Hats</a></li>
-											<li><a href="http://codyhouse.co/?p=748">Gifts</a></li>
-											<li><a href="http://codyhouse.co/?p=748">Scarves &amp; Snoods</a></li>
-										</ul>
-									</li>
-									<li class="has-children">
-										<a href="#0">Caps &amp; Hats</a>
-
-										<ul class="is-hidden">
-											<li class="go-back"><a href="#0">Accessories</a></li>
-											<li class="see-all"><a href="http://codyhouse.co/?p=748">All Caps &amp; Hats</a></li>
-											<li><a href="http://codyhouse.co/?p=748">Beanies</a></li>
-											<li><a href="http://codyhouse.co/?p=748">Caps</a></li>
-											<li><a href="http://codyhouse.co/?p=748">Hats</a></li>
-										</ul>
-									</li>
-									<li><a href="http://codyhouse.co/?p=748">Glasses</a></li>
-									<li><a href="http://codyhouse.co/?p=748">Gloves</a></li>
-									<li><a href="http://codyhouse.co/?p=748">Jewellery</a></li>
-									<li><a href="http://codyhouse.co/?p=748">Scarves</a></li>
-								</ul>
-							</li>
-
-							<li class="has-children">
-								<a href="http://codyhouse.co/?p=748">Bottoms</a>
-
-								<ul class="is-hidden">
-									<li class="go-back"><a href="#0">Clothing</a></li>
-									<li class="see-all"><a href="http://codyhouse.co/?p=748">All Bottoms</a></li>
-									<li><a href="http://codyhouse.co/?p=748">Casual Trousers</a></li>
-									<li class="has-children">
-										<a href="#0">Jeans</a>
-
-										<ul class="is-hidden">
-											<li class="go-back"><a href="#0">Bottoms</a></li>
-											<li class="see-all"><a href="http://codyhouse.co/?p=748">All Jeans</a></li>
-											<li><a href="http://codyhouse.co/?p=748">Ripped</a></li>
-											<li><a href="http://codyhouse.co/?p=748">Skinny</a></li>
-											<li><a href="http://codyhouse.co/?p=748">Slim</a></li>
-											<li><a href="http://codyhouse.co/?p=748">Straight</a></li>
-										</ul>
-									</li>
-									<li><a href="#0">Leggings</a></li>
-									<li><a href="#0">Shorts</a></li>
-								</ul>
-							</li>
-
-							<li class="has-children">
-								<a href="http://codyhouse.co/?p=748">Jackets</a>
-
-								<ul class="is-hidden">
-									<li class="go-back"><a href="#0">Clothing</a></li>
-									<li class="see-all"><a href="http://codyhouse.co/?p=748">All Jackets</a></li>
-									<li><a href="http://codyhouse.co/?p=748">Blazers</a></li>
-									<li><a href="http://codyhouse.co/?p=748">Bomber jackets</a></li>
-									<li><a href="http://codyhouse.co/?p=748">Denim Jackets</a></li>
-									<li><a href="http://codyhouse.co/?p=748">Duffle Coats</a></li>
-									<li><a href="http://codyhouse.co/?p=748">Leather Jackets</a></li>
-									<li><a href="http://codyhouse.co/?p=748">Parkas</a></li>
-								</ul>
-							</li>
-
-							<li class="has-children">
-								<a href="http://codyhouse.co/?p=748">Tops</a>
-
-								<ul class="is-hidden">
-									<li class="go-back"><a href="#0">Clothing</a></li>
-									<li class="see-all"><a href="http://codyhouse.co/?p=748">All Tops</a></li>
-									<li><a href="http://codyhouse.co/?p=748">Cardigans</a></li>
-									<li><a href="http://codyhouse.co/?p=748">Coats</a></li>
-									<li><a href="http://codyhouse.co/?p=748">Polo Shirts</a></li>
-									<li><a href="http://codyhouse.co/?p=748">Shirts</a></li>
-									<li class="has-children">
-										<a href="#0">T-Shirts</a>
-
-										<ul class="is-hidden">
-											<li class="go-back"><a href="#0">Tops</a></li>
-											<li class="see-all"><a href="http://codyhouse.co/?p=748">All T-shirts</a></li>
-											<li><a href="http://codyhouse.co/?p=748">Plain</a></li>
-											<li><a href="http://codyhouse.co/?p=748">Print</a></li>
-											<li><a href="http://codyhouse.co/?p=748">Striped</a></li>
-											<li><a href="http://codyhouse.co/?p=748">Long sleeved</a></li>
-										</ul>
-									</li>
-									<li><a href="http://codyhouse.co/?p=748">Vests</a></li>
-								</ul>
-							</li>
-						</ul> <!-- .cd-secondary-dropdown -->
-					</li> <!-- .has-children -->
-
-					<li class="has-children">
-						<a href="http://codyhouse.co/?p=748">Gallery</a>
-
-						<ul class="cd-dropdown-gallery is-hidden">
-							<li class="go-back"><a href="#0">Menu</a></li>
-							<li class="see-all"><a href="http://codyhouse.co/?p=748">Browse Gallery</a></li>
-							<li>
-								<a class="cd-dropdown-item" href="http://codyhouse.co/?p=748">
-									<img src="img/img.png" alt="Product Image">
-									<h3>Product #1</h3>
-								</a>
-							</li>
-
-							<li>
-								<a class="cd-dropdown-item" href="http://codyhouse.co/?p=748">
-									<img src="img/img.png" alt="Product Image">
-									<h3>Product #2</h3>
-								</a>
-							</li>
-
-							<li>
-								<a class="cd-dropdown-item" href="http://codyhouse.co/?p=748">
-									<img src="img/img.png" alt="Product Image">
-									<h3>Product #3</h3>
-								</a>
-							</li>
-
-							<li>
-								<a class="cd-dropdown-item" href="http://codyhouse.co/?p=748">
-									<img src="img/img.png" alt="Product Image">
-									<h3>Product #4</h3>
-								</a>
-							</li>
-						</ul> <!-- .cd-dropdown-gallery -->
-					</li> <!-- .has-children -->
-
-					<li class="has-children">
-						<a href="http://codyhouse.co/?p=748">Services</a>
-						<ul class="cd-dropdown-icons is-hidden">
-							<li class="go-back"><a href="#0">Menu</a></li>
-							<li class="see-all"><a href="http://codyhouse.co/?p=748">Browse Services</a></li>
-							<li>
-								<a class="cd-dropdown-item item-1" href="http://codyhouse.co/?p=748">
-									<h3>Service #1</h3>
-									<p>This is the item description</p>
-								</a>
-							</li>
-
-							<li>
-								<a class="cd-dropdown-item item-2" href="http://codyhouse.co/?p=748">
-									<h3>Service #2</h3>
-									<p>This is the item description</p>
-								</a>
-							</li>
-
-							<li>
-								<a class="cd-dropdown-item item-3" href="http://codyhouse.co/?p=748">
-									<h3>Service #3</h3>
-									<p>This is the item description</p>
-								</a>
-							</li>
-
-							<li>
-								<a class="cd-dropdown-item item-4" href="http://codyhouse.co/?p=748">
-									<h3>Service #4</h3>
-									<p>This is the item description</p>
-								</a>
-							</li>
-
-							<li>
-								<a class="cd-dropdown-item item-5" href="http://codyhouse.co/?p=748">
-									<h3>Service #5</h3>
-									<p>This is the item description</p>
-								</a>
-							</li>
-
-							<li>
-								<a class="cd-dropdown-item item-6" href="http://codyhouse.co/?p=748">
-									<h3>Service #6</h3>
-									<p>This is the item description</p>
-								</a>
-							</li>
-
-							<li>
-								<a class="cd-dropdown-item item-7" href="http://codyhouse.co/?p=748">
-									<h3>Service #7</h3>
-									<p>This is the item description</p>
-								</a>
-							</li>
-
-							<li>
-								<a class="cd-dropdown-item item-8" href="http://codyhouse.co/?p=748">
-									<h3>Service #8</h3>
-									<p>This is the item description</p>
-								</a>
-							</li>
-
-							<li>
-								<a class="cd-dropdown-item item-9" href="http://codyhouse.co/?p=748">
-									<h3>Service #9</h3>
-									<p>This is the item description</p>
-								</a>
-							</li>
-
-							<li>
-								<a class="cd-dropdown-item item-10" href="http://codyhouse.co/?p=748">
-									<h3>Service #10</h3>
-									<p>This is the item description</p>
-								</a>
-							</li>
-
-							<li>
-								<a class="cd-dropdown-item item-11" href="http://codyhouse.co/?p=748">
-									<h3>Service #11</h3>
-									<p>This is the item description</p>
-								</a>
-							</li>
-
-							<li>
-								<a class="cd-dropdown-item item-12" href="http://codyhouse.co/?p=748">
-									<h3>Service #12</h3>
-									<p>This is the item description</p>
-								</a>
-							</li>
-
-						</ul> <!-- .cd-dropdown-icons -->
-					</li> <!-- .has-children -->
-
-					<li class="cd-divider">Divider</li>
-
-					<li><a href="http://codyhouse.co/?p=748">Page 1</a></li>
-					<li><a href="http://codyhouse.co/?p=748">Page 2</a></li>
-					<li><a href="http://codyhouse.co/?p=748">Page 3</a></li>
-				</ul> <!-- .cd-dropdown-content -->
-			</nav> <!-- .cd-dropdown -->
-		</div> <!-- .cd-dropdown-wrapper -->
+		    
 		</div>  
     </section>
-    <div class="container">
-	  <h1>Use Bootstrap's carousel to show multiple items per slide.</h1>
-	  <div class="row">
-	    <div class="col-md-12">
-	      <div class="carousel slide multi-item-carousel" id="theCarousel">
-	        <div class="carousel-inner">
-	          <div class="item active">
-	            <div class="col-xs-2"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-responsive"></a></div>
-	          </div>
-	          <div class="item">
-	            <div class="col-xs-2"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a></div>
-	          </div>
-	          <div class="item">
-	            <div class="col-xs-2"><a href="#1"><img src="http://placehold.it/300/9c27b0/000000" class="img-responsive"></a></div>
-	          </div>
-	          <div class="item">
-	            <div class="col-xs-2"><a href="#1"><img src="http://placehold.it/300/673ab7/000000" class="img-responsive"></a></div>
-	          </div>
-	          <div class="item">
-	            <div class="col-xs-2"><a href="#1"><img src="http://placehold.it/300/4caf50/000000" class="img-responsive"></a></div>
-	          </div>
-	          <div class="item">
-	            <div class="col-xs-2"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
-	          </div>
-	          
-	          <div class="item">
-	            <div class="col-xs-2"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
-	          </div>
-	          
-	          <!--  Example item end -->
-	        </div>
-	        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-	        <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-	      </div>
+    <section>
+    	<div class="container">
+		  <div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div style="padding-top: 20px">
+					
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
+					<div class="tg-sectionhead">
+						<div class="tg-sectiontitle">
+		  				<h2 class="text-center">Trending Categories</h2>
+						</div>
+					</div>
+				</div>
+				<div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
+				  <div class="carousel-inner">
+				    <div class="item active">
+				      <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="img/hospitals.png" class="img-responsive"><h6 class="text-center">Hospitals</h6></a></div>
+				    </div>
+				    <div class="item">
+				      <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="img/auto.png" class="img-responsive"><h6 class="text-center">Automobile</h6></a></div>
+				    </div>
+				    <div class="item">
+				      <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="img/doctor.png" class="img-responsive"><h6 class="text-center">Doctors</h6></a></div>
+				    </div>
+				    <div class="item">
+				      <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="img/school.png" class="img-responsive"><h6 class="text-center">Education</h6></a></div>
+				    </div>
+				    <div class="item">
+				      <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="img/engineers.png" class="img-responsive"><h6 class="text-center">Architects</h6></a></div>
+				    </div>
+				    <div class="item">
+				      <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="img/commerce.png" class="img-responsive"><h6 class="text-center">Hypermarkets</h6></a></div>
+				    </div>
+				    <div class="item">
+				      <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="img/software.png" class="img-responsive"><h6 class="text-center">information Technology</h6></a></div>
+				    </div>
+				  </div>
+				  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+				  <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+				</div>
+				</div>
+
+		  </div>
+			<div style="padding-top: 20px"></div>
+		  
+		</div>
+    </section>
+	<section class="featured">
+
+		<div style="padding-top: 20px"></div>
+		<div class="container">
+			<div class="row">
+		  	<div class="col-xs-12 col-sm-12 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
+				<div class="tg-sectionhead">
+					<div class="tg-sectiontitle">
+						<h2>Introducing the Top Featured Providers</h2>
+					</div>
+					<div class="tg-description">
+						<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim adia minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip extea commodo consequat.</p>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix">
+				
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 featured listing-item">
+				
+				<div class="demo-card-square mdl-card mdl-shadow--2dp">
+				  <div class="">
+				    <img src="img/eng1.jpg" alt="">			
+				    <span class="mdl-chip">
+					    <span class="mdl-chip__text">Doctors</span>
+					</span>
+					<!-- <button class="mdl-button mdl-js-button mdl-button--icon fav">
+					  <i class="material-icons">favorite</i>
+					</button> -->
+				    <h2 class="mdl-card__title-text">Listing 1</h2>
+				  </div>
+				  <div class="mdl-card__actions mdl-card--border">
+
+				  	<span class="mdl-chip">
+					    <span class="mdl-chip__text">Featured</span>
+					</span>
+					<span class="mdl-chip">
+					    <span class="mdl-chip__text">Verified</span>
+					</span>
+					<ul class="tg-matadata">
+			            <li>
+			                <span class="tg-stars">
+			                    <span style="width:0%;"></span>
+			                </span>
+			            </li>
+			            <li>
+			                <i class="fa fa-thumbs-o-up"></i>
+			                <em>0 ( 0 votes)</em>
+			            </li>
+			        </ul>
+			        <p class="listing-contact-text"><i class="fa fa-phone"></i>&nbsp; +91 7778 778 765</p>
+			        <p class="listing-contact-text"><i class="fa fa-envelope"></i>&nbsp; info**@company.com</p>
+				    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored listing-rm" id="tt1">
+					  <i class="material-icons">add</i>
+					</button>
+					<div class="mdl-tooltip" data-mdl-for="tt1">
+						Follow
+					</div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 featured listing-item">
+				
+				<div class="demo-card-square mdl-card mdl-shadow--2dp">
+				  <div class="">
+				    <img src="img/doc.jpg" alt="">			
+				    <span class="mdl-chip">
+					    <span class="mdl-chip__text">Doctors</span>
+					</span>
+					<!-- <button class="mdl-button mdl-js-button mdl-button--icon fav">
+					  <i class="material-icons">favorite</i>
+					</button> -->
+				    <h2 class="mdl-card__title-text">S.V Hospitals</h2>
+				  </div>
+				  <div class="mdl-card__actions mdl-card--border">
+
+				  	<span class="mdl-chip">
+					    <span class="mdl-chip__text">Featured</span>
+					</span>
+					<span class="mdl-chip">
+					    <span class="mdl-chip__text">Verified</span>
+					</span>
+					<ul class="tg-matadata">
+			            <li>
+			                <span class="tg-stars">
+			                    <span style="width:0%;"></span>
+			                </span>
+			            </li>
+			            <li>
+			                <i class="fa fa-thumbs-o-up"></i>
+			                <em>0 ( 0 votes)</em>
+			            </li>
+			        </ul>
+			        <p class="listing-contact-text"><i class="fa fa-phone"></i>&nbsp; +91 7778 778 765</p>
+			        <p class="listing-contact-text"><i class="fa fa-envelope"></i>&nbsp; info**@company.com</p>
+				    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored listing-rm" id="tt2">
+					  <i class="material-icons">add</i>
+					</button>
+					<div class="mdl-tooltip" data-mdl-for="tt2">
+						Follow
+					</div>
+				  </div>
+				</div>
+			</div><div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 featured listing-item">
+				
+				<div class="demo-card-square mdl-card mdl-shadow--2dp">
+				  <div class="">
+				    <img src="img/eng2.jpg" alt="">			
+				    <span class="mdl-chip">
+					    <span class="mdl-chip__text">Education</span>
+					</span>
+					<!-- <button class="mdl-button mdl-js-button mdl-button--icon fav">
+					  <i class="material-icons">favorite</i>
+					</button> -->
+				    <h2 class="mdl-card__title-text">K.M.C Mangalore</h2>
+				  </div>
+				  <div class="mdl-card__actions mdl-card--border">
+
+				  	<span class="mdl-chip">
+					    <span class="mdl-chip__text">Featured</span>
+					</span>
+					<span class="mdl-chip">
+					    <span class="mdl-chip__text">Verified</span>
+					</span>
+					<ul class="tg-matadata">
+			            <li>
+			                <span class="tg-stars">
+			                    <span style="width:0%;"></span>
+			                </span>
+			            </li>
+			            <li>
+			                <i class="fa fa-thumbs-o-up"></i>
+			                <em>0 ( 0 votes)</em>
+			            </li>
+			        </ul>
+			        <p class="listing-contact-text"><i class="fa fa-phone"></i>&nbsp; +91 7778 778 765</p>
+			        <p class="listing-contact-text"><i class="fa fa-envelope"></i>&nbsp; info**@company.com</p>
+				    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored listing-rm" id="tt3">
+					  <i class="material-icons">add</i>
+					</button>
+					<div class="mdl-tooltip" data-mdl-for="tt3">
+						Follow
+					</div>
+				  </div>
+				</div>
+			</div><div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 featured listing-item">
+				
+				<div class="demo-card-square mdl-card mdl-shadow--2dp">
+				  <div class="">
+				    <img src="img/college.jpg" alt="">			
+				    <span class="mdl-chip">
+					    <span class="mdl-chip__text">Architects</span>
+					</span>
+					<!-- <button class="mdl-button mdl-js-button mdl-button--icon fav">
+					  <i class="material-icons">favorite</i>
+					</button> -->
+				    <h2 class="mdl-card__title-text">G.K Architects</h2>
+				  </div>
+				  <div class="mdl-card__actions mdl-card--border">
+
+				  	<span class="mdl-chip">
+					    <span class="mdl-chip__text">Featured</span>
+					</span>
+					<span class="mdl-chip">
+					    <span class="mdl-chip__text">Verified</span>
+					</span>
+					<ul class="tg-matadata">
+			            <li>
+			                <span class="tg-stars">
+			                    <span style="width:0%;"></span>
+			                </span>
+			            </li>
+			            <li>
+			                <i class="fa fa-thumbs-o-up"></i>
+			                <em>0 ( 0 votes)</em>
+			            </li>
+			        </ul>
+			        <p class="listing-contact-text"><i class="fa fa-phone"></i>&nbsp; +91 7778 778 765</p>
+			        <p class="listing-contact-text"><i class="fa fa-envelope"></i>&nbsp; info**@company.com</p>
+				    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored listing-rm" id="tt4">
+					  <i class="material-icons">add</i>
+					</button>
+					<div class="mdl-tooltip" data-mdl-for="tt4">
+						Follow
+					</div>
+				  </div>
+				</div>
+			</div><div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 featured listing-item">
+				
+				<div class="demo-card-square mdl-card mdl-shadow--2dp">
+				  <div class="">
+				    <img src="img/doc.jpg" alt="">			
+				    <span class="mdl-chip">
+					    <span class="mdl-chip__text">IT</span>
+					</span>
+					<!-- <button class="mdl-button mdl-js-button mdl-button--icon fav">
+					  <i class="material-icons">favorite</i>
+					</button> -->
+				    <h2 class="mdl-card__title-text">Technotronics Pvt. Ltd</h2>
+				  </div>
+				  <div class="mdl-card__actions mdl-card--border">
+
+				  	<span class="mdl-chip">
+					    <span class="mdl-chip__text">Featured</span>
+					</span>
+					<span class="mdl-chip">
+					    <span class="mdl-chip__text">Verified</span>
+					</span>
+					<ul class="tg-matadata">
+			            <li>
+			                <span class="tg-stars">
+			                    <span style="width:0%;"></span>
+			                </span>
+			            </li>
+			            <li>
+			                <i class="fa fa-thumbs-o-up"></i>
+			                <em>0 ( 0 votes)</em>
+			            </li>
+			        </ul>
+			        <p class="listing-contact-text"><i class="fa fa-phone"></i>&nbsp; +91 7778 778 765</p>
+			        <p class="listing-contact-text"><i class="fa fa-envelope"></i>&nbsp; info**@company.com</p>
+				    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored listing-rm" id="tt5">
+					  <i class="material-icons">add</i>
+					</button>
+					<div class="mdl-tooltip" data-mdl-for="tt5">
+						Follow
+					</div>
+				  </div>
+				</div>
+			</div><div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 featured listing-item">
+				
+				<div class="demo-card-square mdl-card mdl-shadow--2dp">
+				  <div class="">
+				    <img src="img/eng1.jpg" alt="">			
+				    <span class="mdl-chip">
+					    <span class="mdl-chip__text">Hypermarkets</span>
+					</span>
+					<!-- <button class="mdl-button mdl-js-button mdl-button--icon fav">
+					  <i class="material-icons">favorite</i>
+					</button> -->
+				    <h2 class="mdl-card__title-text">More Supermarkets India</h2>
+				  </div>
+				  <div class="mdl-card__actions mdl-card--border">
+
+				  	<span class="mdl-chip">
+					    <span class="mdl-chip__text">Featured</span>
+					</span>
+					<span class="mdl-chip">
+					    <span class="mdl-chip__text">Verified</span>
+					</span>
+					<ul class="tg-matadata">
+			            <li>
+			                <span class="tg-stars">
+			                    <span style="width:0%;"></span>
+			                </span>
+			            </li>
+			            <li>
+			                <i class="fa fa-thumbs-o-up"></i>
+			                <em>0 ( 0 votes)</em>
+			            </li>
+			        </ul>
+			        <p class="listing-contact-text"><i class="fa fa-phone"></i>&nbsp; +91 7778 778 765</p>
+			        <p class="listing-contact-text"><i class="fa fa-envelope"></i>&nbsp; info**@company.com</p>
+				    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored listing-rm" id="tt6">
+					  <i class="material-icons">add</i>
+					</button>
+					<div class="mdl-tooltip" data-mdl-for="tt6">
+						Follow
+					</div>
+				  </div>
+				</div>
+			</div><div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 featured listing-item">
+				
+				<div class="demo-card-square mdl-card mdl-shadow--2dp">
+				  <div class="">
+				    <img src="img/eng2.jpg" alt="">			
+				    <span class="mdl-chip">
+					    <span class="mdl-chip__text">Doctors</span>
+					</span>
+					<!-- <button class="mdl-button mdl-js-button mdl-button--icon fav">
+					  <i class="material-icons">favorite</i>
+					</button> -->
+				    <h2 class="mdl-card__title-text">Dr. Abhishek Verma</h2>
+				  </div>
+				  <div class="mdl-card__actions mdl-card--border">
+
+				  	<span class="mdl-chip">
+					    <span class="mdl-chip__text">Featured</span>
+					</span>
+					<span class="mdl-chip">
+					    <span class="mdl-chip__text">Verified</span>
+					</span>
+					<ul class="tg-matadata">
+			            <li>
+			                <span class="tg-stars">
+			                    <span style="width:0%;"></span>
+			                </span>
+			            </li>
+			            <li>
+			                <i class="fa fa-thumbs-o-up"></i>
+			                <em>0 ( 0 votes)</em>
+			            </li>
+			        </ul>
+			        <p class="listing-contact-text"><i class="fa fa-phone"></i>&nbsp; +91 7778 778 765</p>
+			        <p class="listing-contact-text"><i class="fa fa-envelope"></i>&nbsp; info**@company.com</p>
+			        <div class="mdl-tooltip" data-mdl-for="tt7">
+						Follow
+					</div>
+				    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored listing-rm" id="tt7">
+					  <i class="material-icons">add</i>
+					</button>
+					
+				  </div>
+				</div>
+			</div><div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 featured listing-item">
+				
+				<div class="demo-card-square mdl-card mdl-shadow--2dp">
+				  <div class="">
+				    <img src="img/doc.jpg" alt="">			
+				    <span class="mdl-chip">
+					    <span class="mdl-chip__text">Hospitals</span>
+					</span>
+					<!-- <button class="mdl-button mdl-js-button mdl-button--icon fav">
+					  <i class="material-icons">favorite</i>
+					</button> -->
+				    <h2 class="mdl-card__title-text">Goodlife Hospitals</h2>
+				  </div>
+				  <div class="mdl-card__actions mdl-card--border">
+
+				  	<span class="mdl-chip">
+					    <span class="mdl-chip__text">Featured</span>
+					</span>
+					<span class="mdl-chip">
+					    <span class="mdl-chip__text">Verified</span>
+					</span>
+					<ul class="tg-matadata">
+			            <li>
+			                <span class="tg-stars">
+			                    <span style="width:0%;"></span>
+			                </span>
+			            </li>
+			            <li>
+			                <i class="fa fa-thumbs-o-up"></i>
+			                <em>0 ( 0 votes)</em>
+			            </li>
+			        </ul>
+			        <p class="listing-contact-text"><i class="fa fa-phone"></i>&nbsp; +91 7778 778 765</p>
+			        <p class="listing-contact-text"><i class="fa fa-envelope"></i>&nbsp; info**@company.com</p>
+				    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored listing-rm" id="tt8">
+					  <i class="material-icons">add</i>
+					</button>
+					<div class="mdl-tooltip" data-mdl-for="tt8">
+						Follow
+					</div>
+				  </div>
+				</div>
+			</div>
+		  </div>
+		</div>		    	
+		<div style="padding-top: 20px"></div>
+	</section>    
+	<section id="testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">			
+					<div id="myCarousel1" class="carousel slide" data-ride="carousel">
+						<div class="tg-sectionhead">
+							<div class="tg-sectiontitle">
+								<h2>Reviews</h2>
+							</div>
+							<div class="tg-description">
+								<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim adia minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip extea commodo consequat.</p>
+							</div>
+						</div>
+						<!-- Wrapper for carousel items -->
+						<div class="carousel-inner">
+							<div class="item carousel-item active">
+								<div class="row">
+									<div class="col-sm-6">
+										<h4>Technotronics Pvt. Ltd</h4>
+										<div class="testimonial">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+										</div>
+										<div class="media">
+											<div class="media-left d-flex mr-3">
+												<img src="/examples/images/clients/1.jpg" alt="">										
+											</div>
+											<div class="media-body">
+												<div class="overview">
+													<div class="name"><b>Paula Wilson</b></div>
+													<div class="details">Media Analyst / SkyNet</div>
+													<div class="star-rating">
+														<ul class="list-inline">
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+														</ul>
+													</div>
+												</div>										
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<h4>Technotronics Pvt. Ltd</h4>
+										<div class="testimonial">
+											<p>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+										</div>
+										<div class="media">
+											<div class="media-left d-flex mr-3">
+												<img src="/examples/images/clients/2.jpg" alt="">
+											</div>
+											<div class="media-body">
+												<div class="overview">
+													<div class="name"><b>Antonio Moreno</b></div>
+													<div class="details">Web Developer / SoftBee</div>
+													<div class="star-rating">
+														<ul class="list-inline">
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+														</ul>
+													</div>
+												</div>										
+											</div>
+										</div>
+									</div>
+								</div>			
+							</div>
+							<div class="item carousel-item">
+								<div class="row">
+									<div class="col-sm-6">
+										<h4>Technotronics Pvt. Ltd</h4>
+										<div class="testimonial">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+										</div>
+										<div class="media">
+											<div class="media-left d-flex mr-3">
+												<img src="/examples/images/clients/3.jpg" alt="">										
+											</div>
+											<div class="media-body">
+												<div class="overview">
+													<div class="name"><b>Michael Holz</b></div>
+													<div class="details">Web Developer / DevCorp</div>											
+													<div class="star-rating">
+														<ul class="list-inline">
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+														</ul>
+													</div>
+												</div>										
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<h4>Technotronics Pvt. Ltd</h4>
+										<div class="testimonial">
+											<p>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+										</div>
+										<div class="media">
+											<div class="media-left d-flex mr-3">
+												<img src="/examples/images/clients/4.jpg" alt="">										
+											</div>
+											<div class="media-body">
+												<div class="overview">
+													<div class="name"><b>Mary Saveley</b></div>
+													<div class="details">Graphic Designer / MarsMedia</div>
+													<div class="star-rating">
+														<ul class="list-inline">
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+														</ul>
+													</div>
+												</div>										
+											</div>
+										</div>
+									</div>
+								</div>			
+							</div>
+							<div class="item carousel-item">
+								<div class="row">
+									<div class="col-sm-6">
+										<h4>Technotronics Pvt. Ltd</h4>
+										<div class="testimonial">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+										</div>
+										<div class="media">
+											<div class="media-left d-flex mr-3">
+												<img src="/examples/images/clients/5.jpg" alt="">										
+											</div>
+											<div class="media-body">
+												<div class="overview">
+													<div class="name"><b>Martin Sommer</b></div>
+													<div class="details">SEO Analyst / RealSearch</div>
+													<div class="star-rating">
+														<ul class="list-inline">
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+														</ul>
+													</div>
+												</div>										
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<h4>Technotronics Pvt. Ltd</h4>
+										<div class="testimonial">
+											<p>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+										</div>
+										<div class="media">
+											<div class="media-left d-flex mr-3">
+												<img src="/examples/images/clients/6.jpg" alt="">										
+											</div>
+											<div class="media-body">
+												<div class="overview">
+													<div class="name"><b>John Williams</b></div>
+													<div class="details">Web Designer / UniqueDesign</div>
+													<div class="star-rating">
+														<ul class="list-inline">
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star"></i></li>
+															<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+														</ul>
+													</div>
+												</div>										
+											</div>
+										</div>
+									</div>
+								</div>			
+							</div>
+						</div>
+						<!-- Carousel controls -->
+						<a class="carousel-control left carousel-control-prev" href="#myCarousel1" data-slide="prev">
+							<i class="fa fa-chevron-left"></i>
+						</a>
+						<a class="carousel-control right carousel-control-next" href="#myCarousel1" data-slide="next">
+							<i class="fa fa-chevron-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="action-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+					<h3>Sign up to our Services</h3>
+					<p>Adipisicing elit sed dotas eiusmod incididunt utia labore. Adipisicing elit sed dotas eiusmod incididunt utia labore. Adipisicing elit sed dotas eiusmod incididunt utia labore.</p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+				<div style="padding-bottom: 60px">
+					
+				</div>
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent pull-right">
+					  <strong>Sign Up</strong>
+					</button>
+				</div>
+			</div>
+			<div style="padding-bottom: 10px">
+		</div>
+	</section>
+	<footer class="mdl-mega-footer">
+	 <div class="container">
+	 	 <div class="mdl-mega-footer__middle-section">
+
+	    <div class="mdl-mega-footer__drop-down-section">
+	      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+	      <h1 class="mdl-mega-footer__heading">Features</h1>
+	      <ul class="mdl-mega-footer__link-list">
+	        <li><a href="#">About</a></li>
+	        <li><a href="#">Terms</a></li>
+	        <li><a href="#">Partners</a></li>
+	        <li><a href="#">Updates</a></li>
+	      </ul>
 	    </div>
+
+	    <div class="mdl-mega-footer__drop-down-section">
+	      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+	      <h1 class="mdl-mega-footer__heading">Details</h1>
+	      <ul class="mdl-mega-footer__link-list">
+	        <li><a href="#">Specs</a></li>
+	        <li><a href="#">Tools</a></li>
+	        <li><a href="#">Resources</a></li>
+	      </ul>
+	    </div>
+
+	    <div class="mdl-mega-footer__drop-down-section">
+	      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+	      <h1 class="mdl-mega-footer__heading">Technology</h1>
+	      <ul class="mdl-mega-footer__link-list">
+	        <li><a href="#">How it works</a></li>
+	        <li><a href="#">Patterns</a></li>
+	        <li><a href="#">Usage</a></li>
+	        <li><a href="#">Products</a></li>
+	        <li><a href="#">Contracts</a></li>
+	      </ul>
+	    </div>
+
+	    <div class="mdl-mega-footer__drop-down-section">
+	      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+	      <h1 class="mdl-mega-footer__heading">FAQ</h1>
+	      <ul class="mdl-mega-footer__link-list">
+	        <li><a href="#">Questions</a></li>
+	        <li><a href="#">Answers</a></li>
+	        <li><a href="#">Contact us</a></li>
+	      </ul>
+	    </div>
+
 	  </div>
-	</div>
+
+	  <div class="mdl-mega-footer__bottom-section">
+	    <div class="mdl-logo">Title</div>
+	    <ul class="mdl-mega-footer__link-list">
+	      <li><a href="#">Help</a></li>
+	      <li><a href="#">Privacy & Terms</a></li>
+	    </ul>
+	  </div>
+
+	 </div>
+	</footer>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
 
@@ -359,33 +1305,33 @@
 		<script>
 			$(window).scroll(function() {
 			  if ($(document).scrollTop() > 50) {
-			    $('nav').addClass('shrink');
+			    $('#nav').addClass('shrink');
 			  } else {
-			    $('nav').removeClass('shrink');
+			    $('#nav').removeClass('shrink');
 			  }
 			});
 			// Instantiate the Bootstrap carousel
-			$('.multi-item-carousel').carousel({
-			  interval: false
-			});
-
-			// for every slide in carousel, copy the next slide's item in the slide.
-			// Do the same for the next, next item.
-			$('.multi-item-carousel .item').each(function(){
+			
+			$('.carousel[data-type="multi"] .item').each(function(){
 			  var next = $(this).next();
 			  if (!next.length) {
 			    next = $(this).siblings(':first');
 			  }
 			  next.children(':first-child').clone().appendTo($(this));
-			  
-			  if (next.next().length>0) {
-			    next.next().children(':first-child').clone().appendTo($(this));
-			  } else {
-			  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+
+			  for (var i=0;i<4;i++) {
+			    next=next.next();
+			    if (!next.length) {
+			    	next = $(this).siblings(':first');
+			  	}
+			    
+			    next.children(':first-child').clone().appendTo($(this));
 			  }
 			});
 		</script>
 		<script src="js/jquery.menu-aim.js"></script> <!-- menu aim -->
 		<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+		<script src="js/material.min.js"></script>
     </body>
 </html>
